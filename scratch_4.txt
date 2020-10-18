@@ -1,0 +1,120 @@
+import turtle as t
+
+tp=t.Pen()
+#letters
+def letter_t ():
+
+    tp.forward(50)
+    tp.backward(25)
+    tp.left(270)
+    tp.forward(70)
+    tp.bk(70)
+    tp.right(-90)
+
+
+def letter_E():
+    tp.left(180)
+    tp.fd(25)
+    tp.left(90)
+    tp.fd(60)
+    tp.left(90)
+    tp.fd(25)
+    tp.bk(25)
+    tp.left(90)
+    tp.fd(15)
+    tp.left(90)
+    tp.bk(25)
+    tp.forward(25)
+    tp.left(-90)
+    tp.fd(45)
+    tp.left(-90)
+    tp.forward(25)
+def letter_o():
+    t.circle(50)
+def letter_h():
+    tp.left(-90)
+    tp.forward(50)
+    tp.bk(25)
+    tp.left(90)
+    tp.forward(25)
+    tp.left(-90)
+    tp.forward(25)
+    tp.bk(25)
+    tp.left(90)
+    tp.left(-90)
+    tp.bk(25)
+    tp.bk(25)
+    tp.left(90)
+    tp.up()
+    tp.fd(50)
+    tp.down()
+def letter_s():
+
+
+    tp.bk(50)
+    tp.left(-110)
+    tp.fd(50)
+    tp.left(70)
+    tp.fd(50)
+    tp.left(50)
+    tp.fd(50)
+    tp.left(-60)
+    tp.fd(25)
+    tp.right(80)
+    tp.fd(50)
+    tp.left(-50)
+    tp.fd(50)
+    tp.up()
+    tp.left(-90)
+    tp.fd(60)
+    tp.left(-90)
+    tp.fd(90)
+    tp.down()
+
+#classes
+class Letters:
+    def __init__(self, letter1,letter2):
+        self.o =letter1
+        self.e=letter2
+
+    def vowel_a (self):
+        self.o()
+    def vowel_e (self):
+        self.e()
+class Words(Letters) :
+    def __init__(self):
+        Letters.__init__(self)
+        self.S =letter_s
+        selfBN         .H =letter_h
+
+
+    def SHET (self):
+        self.S()
+        self.H()
+
+
+class Words1(Letters) :#1
+    def __init__(self,letter1,letter2):#3 coordinate parameters
+        Letters.__init__(self, letter1, letter2)#2
+
+        self.E =letter_E
+        self.T =letter_t
+
+
+    def SHET (self):
+        self.E()
+        self.T()
+
+#calling code
+words_0=Words1
+words_0.SHET
+words2=Words
+words2.vowel_e
+words3=Words1(letter_o, letter_E)
+words3.vowel_a()
+letter_O=Letters
+
+letter_O.vowel_a
+letter_O.vowel_e
+
+t.mainloop()
